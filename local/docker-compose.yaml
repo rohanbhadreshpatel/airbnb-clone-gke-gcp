@@ -1,0 +1,69 @@
+
+   
+version: "3"
+
+services:
+  mysql:
+    image: mysql:8.0
+    networks:
+      - network   
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: cmpe172
+    volumes:
+    - "./init.sql:/docker-entrypoint-initdb.d/1.sql"
+
+    restart: always
+
+  users:
+    image: rohanbpatel14/airbnb-backend:latest
+    depends_on:
+    - mysql    
+    volumes:
+      - /tmp:/tmp
+    networks:
+      - network   
+    ports:
+      - 8081:8080
+    environment:
+      MYSQL_HOST: mysql
+    restart: always 
+
+  property:
+    image: rohanbpatel14/airbnb-property:latest
+    depends_on:
+    - mysql    
+    volumes:
+      - /tmp:/tmp
+    networks:
+      - network   
+    ports:
+      - 8082:8080
+    environment:
+      MYSQL_HOST: mysql
+    restart: always 
+  
+  payments:
+    image: rohanbpatel14/airbnb-payments:latest
+    depends_on:
+    - property    
+    volumes:
+      - /tmp:/tmp
+    networks:
+      - network   
+    ports:
+      - 8083:8080
+    environment:
+      MYSQL_HOST: mysql
+      PROPERTY_ENDPOINT: http://localhost:8082/property/
+    restart: always 
+  
+
+volumes:
+  schemas:
+    external: false
+
+networks:
+  network:
+    driver: bridge
