@@ -1,4 +1,4 @@
-# AirBnb Clone
+# AirBnb Clone with Google Kubernetes Engine (GKE) hosted on Google Cloud Platform (GCP)
 
 ## Overview
 
@@ -78,19 +78,19 @@ The application was implemented in Java Spring and be deployable as Docker Conta
   - **Credit Card Payments:** Support
     Integration with CyberSource Payment Gateway
 
-### 3. Project Screenshots / Demo
+### 3. Project images / Demo
 
 #### Front Office Portal
 
 1. Sign Up
 
-   ![Sign Up](./screenshots/sign_up.png)
+   ![Sign Up](./images/sign_up.png)
 
     <br/>
 
 2. Sign In
 
-   ![Sign In Page](./screenshots/sign_in.png)
+   ![Sign In Page](./images/sign_in.png)
 
   <br/>
 
@@ -98,7 +98,7 @@ The application was implemented in Java Spring and be deployable as Docker Conta
 
 1. Auth Page
 
-   ![Auth Page](./screenshots/backoffice_auth.png)
+   ![Auth Page](./images/backoffice_auth.png)
 
     <br/>
 
@@ -106,25 +106,25 @@ The application was implemented in Java Spring and be deployable as Docker Conta
 
 1. Workloads
 
-   ![Workload](./screenshots/gke_workloads.png)
+   ![Workload](./images/gke_workloads.png)
 
    <br/>
 
 2. GKE Services
 
-   ![GKE Services](./screenshots/gke_service.png)
+   ![GKE Services](./images/gke_service.png)
 
    <br/>
 
 3. GKE Ingress Details
 
-   ![GKE Ingress Details](./screenshots/gke_ingress.png)
+   ![GKE Ingress Details](./images/gke_ingress.png)
 
    <br/>
 
 4. GKE MySQL
 
-   ![GKE MySQL](./screenshots/gke_mysql.png)
+   ![GKE MySQL](./images/gke_mysql.png)
 
    <br/>
 
