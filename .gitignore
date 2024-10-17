@@ -49,7 +49,6 @@ thumbs.db
 .CVS
 node_modules/
 jscoverage_lib/
-commit-conventional.sh
 src/main/webapp/WEB-INF/ftl/rsrc/
 src/main/webapp/rsrc/dist/
 src/main/resources/application-local.properties
