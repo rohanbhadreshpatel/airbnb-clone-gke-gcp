@@ -4,8 +4,6 @@
 
 Google Cloud Hosted Enterprise Application for an AirBnb Clone(without booking / date features). This project is a full-stack application that replicates key functionalities of Airbnb, including property listings, user authentication, booking, and payment processing. It is built using microservices architecture.
 
----
-
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -28,13 +26,9 @@ Google Cloud Hosted Enterprise Application for an AirBnb Clone(without booking /
   - [Kubernetes (GKE)](#kubernetes-gke)
 - [Demo](#demo)
 
----
-
 ## Introduction
 
 This project aims to provide a comprehensive Airbnb clone that demonstrates the use of modern technologies and best practices in software development. It utilizes microservices architecture, RESTful APIs, and containerization to ensure scalability, maintainability, and ease of deployment.
-
----
 
 ## Project Architecture
 
@@ -48,14 +42,12 @@ The application is divided into several microservices, each responsible for a sp
 - **Back-Office Application**: Provides support and administration functionalities.
 - **Frontend Application**: User interface for customers to interact with the platform.
 
----
-
 ## Monorepo Structure
 
 The project is organized as a monorepo with the following structure:
 
 ```
-root/
+airbnb-clone-gke-gcp/
 ├── airbnb-backend/          # Authentication Service
 ├── back-office/             # Back-Office Backend and Frontend
 │   ├── backoffice-backend/
@@ -70,8 +62,6 @@ root/
 ├── README.md                # Project Documentation
 └── Progress.md              # Development Progress Notes
 ```
-
----
 
 ## Technologies Used
 
@@ -257,8 +247,6 @@ npm install
 npm start
 ```
 
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -277,8 +265,6 @@ Clone the repository:
 git clone https://github.com/rohanbhadreshpatel/airbnb-clone-gke-gcp.git
 cd airbnb-clone-gke-gcp
 ```
-
----
 
 ## Running the Application Locally
 
@@ -307,8 +293,6 @@ This command will build and run all the services defined in the `docker-compose.
   - Property Service: [http://localhost:8081](http://localhost:8081)
   - Payment Service: [http://localhost:8082](http://localhost:8082)
   - Back-Office Backend: [http://localhost:8083](http://localhost:8083)
-
----
 
 ## Deployment
 
